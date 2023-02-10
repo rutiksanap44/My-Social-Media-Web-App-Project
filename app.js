@@ -6,8 +6,6 @@ const port = 1023;
 
 app.use('/',require('./routes'));
 
-
-
 app.listen(port,function(err){
     if(err){
         console.log(`Error in running the Server : ${err}`);
