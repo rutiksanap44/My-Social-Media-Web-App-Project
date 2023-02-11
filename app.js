@@ -6,6 +6,8 @@ const port = 1023;
 
 const expressLayouts = require('express-ejs-layouts');
 
+app.use(express.static('./assets'));
+
 app.use(expressLayouts);
 
 app.use('/',require('./routes'));
