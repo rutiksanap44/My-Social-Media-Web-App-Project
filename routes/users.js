@@ -11,4 +11,10 @@ const postController = require('../controllers/post_controller');
 
 router.get('/post',postController.post);
 
+// for sign in page
+router.get('/signin',usersController.signin);
+
+// for sign up page
+router.get('/signup',usersController.signup);
+
 module.exports = router;
